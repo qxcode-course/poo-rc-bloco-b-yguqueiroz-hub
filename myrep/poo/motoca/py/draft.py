@@ -2,8 +2,10 @@ class Pessoa:
     def __init(self, nome: str):
         self.nome = nome
 
-    def __str__(self)
-class moto:
+    def __str__(self):
+        
+class Moto:
+
     def __init__(self):
         self.pessoa: Pessoa | None = None
 

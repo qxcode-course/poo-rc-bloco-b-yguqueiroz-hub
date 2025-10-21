@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2025-10-07_14-25-50",
-            "content": "",
+            "content": "@@ -1,410 +0,0 @@\n-class Chinela: %0A    def __init__(self):%0A        self.__tamanho = 0%0A%0A    def getTamanho(self):%0A        return self.__tamanho%0A    %0A    def setTamanho(self, valor: int):%0A%0A%0Achinela = Chinela()%0A%0Awhile chinela.getTamanho() == 0:%0A    print(%22Digite o tamanho da sua chinela%22)%0A    tamanho = int(input())%0A    chinela.setTamanho(tamanho)%0A%0Aprint (%22Parab%C3%A9ns voc%C3%AA acabou de comprar uma chinela tamanho%22 chinela.getTamanho())\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-21_13-36-26",
+            "content": "@@ -164,297 +164,8 @@\n t):%0A\n-        if valor %3C 20 or valor %3E 50:%0A            print(%22Erro: o tamanho deve estar entre 20 e 50%22)%0A        elif valor %25 2 != 0:%0A            print(%22Erro: o tamanho deve ser um n%C3%BAmero par.%22)%0A        else:%0A            self.__tamanho = valor%0A            print(%22Tamanho registrado com sucesso%22)\n %0A%0Ach\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-10-21_16-16-00",
+            "content": "@@ -670,17 +670,16 @@\n tamanho%22\n-,\n  chinela\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-21_16-17-03",
+            "content": "class Chinela: \n    def __init__(self):\n        self.__tamanho = 0\n\n    def getTamanho(self):\n        return self.__tamanho\n    \n    def setTamanho(self, valor: int):\n        if valor < 20 or valor > 50:\n            print(\"Erro: o tamanho deve estar entre 20 e 50\")\n        elif valor % 2 != 0:\n            print(\"Erro: o tamanho deve ser um n\u00famero par.\")\n        else:\n            self.__tamanho = valor\n            print(\"Tamanho registrado com sucesso\")\n\nchinela = Chinela()\n\nwhile chinela.getTamanho() == 0:\n    print(\"Digite o tamanho da sua chinela\")\n    tamanho = int(input())\n    chinela.setTamanho(tamanho)\n\nprint (\"Parab\u00e9ns voc\u00ea acabou de comprar uma chinela tamanho\", chinela.getTamanho())",
+            "lines": "24"
         }
     ]
 }
