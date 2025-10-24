@@ -5,3 +5,5 @@
 2025-10-21 16:13:19, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
 2025-10-21 16:16:00, EXEC, v:1, k:poo@chinela, mode:FREE, size:24
 2025-10-21 16:17:03, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:24
+2025-10-21 16:18:40, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-21 16:18:50, MOVE, v:1, k:poo@motoca, mode:PICK

@@ -1,8 +1,15 @@
 class Pessoa:
-    def __init(self, nome: str):
-        self.nome = nome
+    def __init(self, nome: str, idade: int):
+        self.__nome = nome
+        self.__idade = idade
 
-    def __str__(self):
+    def getName(self):
+        return self.__nome
+    def getAge(self):
+        return self.__idade
+    def toString(self):
+        return f"{self.__nome}:{self.__idade}"
+
         
 class Moto:
 
@@ -20,7 +27,31 @@ class Moto:
         aux = self.pessoa
         self.pessoa = None
         return aux
+    
+    def comprarTempo(self, time: int):
+        self.time =+ time
 
-def main():
 
-    moto = Moto()
+    def dirigir(self, time_drive: int):
+        if self.time == 0>
+        print("compre tempo")
+        return
+        if self.pessoa is None:
+            print("motoca vazia")
+            return
+        if self.pessoa.getAge() > 10:
+            print("muito velho para dirigir")
+            return
+        
+        tempo_restante = self.time - time_drive
+        if tempo_restante < 0:
+            print("acabou o tempo {self.time} minutes")
+            self.time = 0
+            return
+        self.time = tempo_restante
+
+        def honk(self) -> str:
+            return "p" + "e" * self.potencia + "m"
+        def __str__(self): 
+            pessoa_str = self.pessoa.toString() if self.pessoa else "vazio"
+            return f"power:{self.potencia}, time:{self.time}, person:({pessoa_str})"
