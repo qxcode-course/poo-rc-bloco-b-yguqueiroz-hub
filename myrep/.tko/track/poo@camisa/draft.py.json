@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_18-37-00",
+            "content": "@@ -16,25 +16,24 @@\n    %0A\n-TAMANHOS_VALIDOS \n+tamanhos_validos\n  = (\n@@ -330,32 +330,32 @@\n  Camisa.\n-TAMANHOS_VALIDOS\n+tamanhos_validos\n :%0A      \n@@ -439,32 +439,32 @@\n (Camisa.\n-TAMANHOS_VALIDOS\n+tamanhos_validos\n )%0A      \n@@ -535,24 +535,24 @@\n s: %7B\n-TAMANHOS_VALIDOS\n+tamanhos_validos\n %7D%22)%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-25_18-38-27",
+            "content": "@@ -12,20 +12,16 @@\n a:%0A    %0A\n-    \n TAMANHOS\n@@ -69,24 +69,16 @@\n  %22XG%22)%0A%0A\n-        \n def __in\n@@ -89,24 +89,16 @@\n (self):%0A\n-        \n     self\n@@ -118,24 +118,16 @@\n r = %22%22%0A%0A\n-        \n def getT\n@@ -147,24 +147,16 @@\n -%3E str:%0A\n-        \n     retu\n@@ -174,24 +174,16 @@\n amanho%0A%0A\n-        \n def setT\n@@ -208,24 +208,16 @@\n : str):%0A\n-        \n     if v\n@@ -234,32 +234,24 @@\n ne:%0A        \n-  \n-      \n valor = %22%22%0A%0A\n@@ -250,24 +250,16 @@\n r = %22%22%0A%0A\n-        \n     valo\n@@ -296,24 +296,16 @@\n upper()%0A\n-        \n     if v\n@@ -357,24 +357,16 @@\n         \n-     \n-   \n self.__t\n@@ -392,24 +392,16 @@\n alizado%0A\n-        \n     else\n@@ -410,24 +410,16 @@\n         \n-   \n-     \n permitid\n@@ -458,24 +458,16 @@\n ALIDOS)%0A\n-        \n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-25_18-39-04",
+            "content": "@@ -73,16 +73,20 @@\n  %22XG%22)%0A%0A\n+    \n     def \n@@ -105,24 +105,28 @@\n f):%0A        \n+   \n+ \n self._tamanh\n@@ -134,24 +134,28 @@\n : str = %22%22%0A%0A\n+    \n     def getT\n@@ -183,16 +183,20 @@\n         \n+ \n+   \n return s\n@@ -210,16 +210,20 @@\n amanho%0A%0A\n+    \n     def \n@@ -252,32 +252,36 @@\n : str):%0A        \n+    \n if valor is None\n@@ -290,24 +290,28 @@\n             \n+  \n+  \n valor = %22%22%0A%0A\n@@ -302,32 +302,36 @@\n     valor = %22%22%0A%0A\n+    \n         valor_no\n@@ -364,32 +364,36 @@\n upper()%0A        \n+ \n+   \n if valor_normali\n@@ -433,24 +433,28 @@\n             \n+   \n+ \n self.__taman\n@@ -484,16 +484,20 @@\n         \n+    \n else:%0A  \n@@ -506,16 +506,20 @@\n         \n+  \n+  \n permitid\n@@ -558,16 +558,20 @@\n ALIDOS)%0A\n+    \n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-25_18-39-16",
+            "content": "@@ -107,25 +107,24 @@\n       self._\n-_\n tamanho: str\n@@ -281,16 +281,17 @@\n or = %22%22%0A\n+%0A\n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-25_18-43-18",
+            "content": "@@ -788,17 +788,16 @@\n  input()\n-:\n %0A       \n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-25_18-44-05",
+            "content": "@@ -788,16 +788,17 @@\n  input()\n+:\n %0A       \n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-25_18-44-16",
+            "content": "@@ -614,20 +614,34 @@\n )%0A%0A%0A\n-def Main(): \n+if __name__ == %22__main__%22:\n %0A   \n@@ -706,40 +706,12 @@\n     \n-try:%0A            resposta = inpu\n+prin\n t(%22D\n@@ -742,27 +742,27 @@\n pa (\n-PP, P, M, G, GG, XG\n+pp, p, m, g, gg ,xg\n ):%22)\n@@ -774,138 +774,26 @@\n     \n-except EOFError:%0A            print(%22%5CnErro de entrada: N%C3%A3o foi possivel ler mais dados. encerrando programa.%22)%0A            return \n+resposta = input()\n %0A   \n@@ -832,22 +832,16 @@\n         \n-%0A     \n print (%22\n@@ -906,47 +906,4 @@\n o())\n-%0A    %0Aif __name__ == %22__main__%22:%0A    main()\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-25_18-49-31",
+            "content": "@@ -1034,16 +1034,20 @@\n manho())\n+%0A   \n  %0Aif __n\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_18-50-03",
+            "content": "@@ -1036,21 +1036,16 @@\n nho()) %0A\n-    %0A\n if __nam\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-25_18-50-09",
+            "content": "@@ -969,16 +969,17 @@\n    print\n+ \n (%22Parab%C3%A9\n@@ -1034,16 +1034,17 @@\n manho())\n+ \n %0A    %0Aif\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_18-50-18",
+            "content": "@@ -1038,22 +1038,16 @@\n ())%0A    \n-%0A%0A    \n %0Aif __na\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_18-51-25",
+            "content": "@@ -1040,17 +1040,20 @@\n )%0A    %0A%0A\n-%0A\n+    \n %0Aif __na\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_18-51-28",
+            "content": "@@ -618,15 +618,16 @@\n def \n-m\n+M\n ain():\n+ \n %0A   \n@@ -1040,20 +1040,17 @@\n )%0A    %0A%0A\n-    \n+%0A\n %0Aif __na\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-25_18-52-05",
+            "content": "@@ -958,16 +958,20 @@\n        %0A\n+    \n  print(%22\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_18-52-41",
+            "content": "@@ -1,1092 +1,52 @@\n-class Camisa:%0A    %0A    TAMANHOS_VALIDOS  = (%22PP%22 , %22P%22, %22M%22, %22G%22, %22GG%22 , %22XG%22)%0A%0A    def __init__(self):%0A        self.__tamanho: str = %22%22%0A%0A    def getTamanho(self) -%3E str:%0A        return self.__tamanho%0A%0A    def setTamanho(self, valor: str):%0A        if valor is None:%0A            valor = %22%22%0A        valor_normalizado = valor.strip().upper()%0A        if valor_normalizado in Camisa.TAMANHOS_VALIDOS:%0A            self.__tamanho = valor_normalizado%0A        else:%0A            permitidos = %22, %22.join(Camisa.TAMANHOS_VALIDOS)%0A            print (f%22 Erro: tamanho inv%C3%A1lido ' %7Bvalor%7D'. valores permitidos: %7BTAMANHOS_VALIDOS%7D%22)%0A%0A%0Adef main():%0A    roupa = Camisa()%0A    while roupa.getTamanho() == %22%22:%0A        try:%0A            resposta = input(%22Digite seu tamanho de roupa (PP, P, M, G, GG, XG):%22)%0A        except EOFError:%0A            print(%22%5CnErro de entrada: N%C3%A3o foi possivel ler mais dados. encerrando programa.%22)%0A            return %0A        roupa.setTamanho(resposta)%0A        %0A         print(%22Parab%C3%A9ns, voc%C3%AA comprou uma roupa tamanho%22, roupa.getTamanho())%0A    %0A%0A    %0Aif __name__ == %22__main__%22:%0A    main()\n+@@ -958,20 +958,16 @@%0A        %250A%0A-    %0A  print(%2522%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-25_18-52-43",
+            "content": "@@ -954,24 +954,29 @@\n a)%0A        %0A\n+     \n     print(%22P\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_18-53-37",
+            "content": "@@ -588,21 +588,16 @@\n tidos: %7B\n-self.\n TAMANHOS\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-25_18-56-46",
+            "content": "class Camisa:\n    \n    TAMANHOS_VALIDOS  = (\"PP\" , \"P\", \"M\", \"G\", \"GG\" , \"XG\")\n\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str):\n        if valor is None:\n            valor = \"\"\n        valor_normalizado = valor.strip().upper()\n        if valor_normalizado in Camisa.TAMANHOS_VALIDOS:\n            self.__tamanho = valor_normalizado\n        else:\n            permitidos = \", \".join(Camisa.TAMANHOS_VALIDOS)\n            print (f\" Erro: tamanho inv\u00e1lido ' {valor}'. valores permitidos: {self.TAMANHOS_VALIDOS}\")\n\n\ndef main():\n    roupa = Camisa()\n    while roupa.getTamanho() == \"\":\n        try:\n            resposta = input(\"Digite seu tamanho de roupa (PP, P, M, G, GG, XG):\")\n        except EOFError:\n            print(\"\\nErro de entrada: N\u00e3o foi possivel ler mais dados. encerrando programa.\")\n            return \n        roupa.setTamanho(resposta)\n        \n    print(\"Parab\u00e9ns, voc\u00ea comprou uma roupa tamanho\", roupa.getTamanho())\n    \n\n    \nif __name__ == \"__main__\":\n    main()",
+            "lines": "37"
+        }
+    ]
+}
