@@ -54,3 +54,7 @@
 2025-10-25 18:56:46, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0, size:37
 2025-10-25 18:57:02, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0
 2025-10-25 18:57:04, EXEC, v:1, k:poo@camisa, mode:FREE
+2025-10-25 19:27:36, MOVE, v:1, k:poo@roupa, mode:DOWN
+2025-10-25 19:27:37, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 19:27:39, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:0
+2025-10-25 19:27:40, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0

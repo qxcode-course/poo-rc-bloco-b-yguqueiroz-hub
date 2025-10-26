@@ -25,7 +25,7 @@
 Aqui um exemplo de código python incompleto que implementa a classe Camisa e um loop para pedir o tamanho da camisa ao usuário.
 
 ```py
-e
+
 class Camisa:
     def __init__(self): # isso é o construtor em python
         self.__tamanho: str = "" # atributos em python com __ na frente são privados

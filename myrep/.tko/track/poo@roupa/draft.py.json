@@ -1,0 +1,134 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_19-27-39",
+            "content": "@@ -1,1197 +0,0 @@\n-class Camisa:%0A    %0A    TAMANHOS_VALIDOS  = (%22PP%22 , %22P%22, %22M%22, %22G%22, %22GG%22 , %22XG%22)%0A%0A    def __init__(self):%0A        self.__tamanho: = %22%22%0A    %0A    @property%0A    def Tamanho(self) -%3E str:%0A        %22%22%22Getter para o tamanho.%22%22%22%0A        return self.__tamanho%0A    %0A    @tamanho.setter%0A    def Tamanho(self, valor: str):%0A        %22%22%22Setter para o tamanho%22%22%22%0A        if valor is None:%0A            valor = %22%22%0A        valor_normalizado = valor.strip().upper()%0A        if valor_normalizado in Camisa.TAMANHOS_VALIDOS:%0A            self.__tamanho = valor_normalizado%0A        else:%0A            permitidos = %22, %22.join(Camisa.TAMANHOS_VALIDOS)%0A            print (f%22 Erro: tamanho inv%C3%A1lido ' %7Bvalor%7D'. valores permitidos: %7Bself.TAMANHOS_VALIDOS%7D%22)%0A%0A%0Adef main():%0A    roupa = Camisa()%0A    while roupa.getTamanho() == %22%22:%0A        try:%0A            resposta = input(%22Digite seu tamanho de roupa (PP, P, M, G, GG, XG):%22)%0A        except EOFError:%0A            print(%22%5CnErro de entrada: N%C3%A3o foi possivel ler mais dados. encerrando programa.%22)%0A            return %0A        roupa.setTamanho(resposta)%0A        %0A    print(%22Parab%C3%A9ns, voc%C3%AA comprou uma roupa tamanho%22, roupa.getTamanho())%0A    %0A%0A    %0Aif __name__ == %22__main__%22:%0A    main()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-26_18-05-39",
+            "content": "@@ -119,16 +119,17 @@\n _tamanho\n+:\n  = %22%22%0A  \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-26_18-06-11",
+            "content": "@@ -144,33 +144,33 @@\n roperty%0A    def \n-t\n+T\n amanho(self) -%3E \n@@ -274,17 +274,17 @@\n     def \n-t\n+T\n amanho(s\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-26_18-06-32",
+            "content": "@@ -771,17 +771,17 @@\n oupa.get\n-t\n+T\n amanho()\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-26_18-07-09",
+            "content": "@@ -764,24 +764,27 @@\n while roupa.\n+get\n tamanho() ==\n@@ -1037,17 +1037,20 @@\n   roupa.\n-t\n+setT\n amanho(r\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-26_18-07-31",
+            "content": "@@ -775,16 +775,18 @@\n .tamanho\n+()\n  == %22%22:%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-26_18-08-18",
+            "content": "@@ -1043,19 +1043,17 @@\n anho\n- = \n+(\n resposta\n %0A   \n@@ -1048,16 +1048,17 @@\n resposta\n+)\n %0A       \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-26_18-09-10",
+            "content": "@@ -1,1184 +1,71 @@\n-class Camisa:%0A    %0A    TAMANHOS_VALIDOS  = (%22PP%22 , %22P%22, %22M%22, %22G%22, %22GG%22 , %22XG%22)%0A%0A    def __init__(self):%0A        self.__tamanho = %22%22%0A    %0A    @property%0A    def tamanho(self) -%3E str:%0A        %22%22%22Getter para o tamanho.%22%22%22%0A        return self.__tamanho%0A    %0A    @tamanho.setter%0A    def tamanho(self, valor: str):%0A        %22%22%22Setter para o tamanho%22%22%22%0A        if valor is None:%0A            valor = %22%22%0A        valor_normalizado = valor.strip().upper()%0A        if valor_normalizado in Camisa.TAMANHOS_VALIDOS:%0A            self.__tamanho = valor_normalizado%0A        else:%0A            permitidos = %22, %22.join(Camisa.TAMANHOS_VALIDOS)%0A            print (f%22 Erro: tamanho inv%C3%A1lido ' %7Bvalor%7D'. valores permitidos: %7Bself.TAMANHOS_VALIDOS%7D%22)%0A%0A%0Adef main\n+@@ -1120,23 +1120,28 @@%0A , roupa.%0A-t%0A+getT%0A amanho%0A+\n ()\n-:\n %0A \n-   roupa = Camisa()%0A    while roupa.tamanho == %22%22:%0A        try:%0A            resposta = input(%22Digite seu tamanho de roupa (PP, P, M, G, GG, XG):%22)%0A        except EOFError:%0A            print(%22%5CnErro de entrada: N%C3%A3o foi possivel ler mais dados. encerrando programa.%22)%0A            return %0A        roupa.tamanho = resposta%0A        %0A    print(%22Parab%C3%A9ns, voc%C3%AA comprou uma roupa tamanho%22, roupa.tamanho)%0A    %0A%0A    %0Aif __name__ == %22__main__%22:%0A    main()\n+)%250A    %250A%250A%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-10-26_18-15-25",
+            "content": "@@ -1022,256 +1022,8 @@\n rn %0A\n-        %0A        cmd = entrada.strip().lower()%0A%0A        if cmd == %22show%22:%0A            print(%22Tamanho atual:%22, roupa.tamanho)%0A            continue%0A        elif cmd == %22end%22:%0A            print(%22Encerrando programa.%22)%0A            return%0A        else:%0A\n     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-26_18-18-46",
+            "content": "@@ -1274,21 +1274,16 @@\n         \n-     \n roupa.ta\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-26_18-18-59",
+            "content": "@@ -1041,23 +1041,22 @@\n   cmd = \n-respost\n+entrad\n a.strip(\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-26_18-19-13",
+            "content": "@@ -567,19 +567,165 @@\n        p\n-ass\n+ermitidos = %22, %22.join(Camisa.TAMANHOS_VALIDOS)%0A            print (f%22 Erro: tamanho inv%C3%A1lido ' %7Bvalor%7D'. valores permitidos: %7Bself.TAMANHOS_VALIDOS%7D%22)\n %0A%0A%0Adef m\n@@ -766,12 +766,27 @@\n ile \n-True\n+roupa.tamanho == %22%22\n :%0A  \n@@ -829,60 +829,200 @@\n put(\n-).strip()%0A        except EOFError:%0A            break\n+%22Digite seu tamanho de roupa (PP, P, M, G, GG, XG):%22)%0A        except EOFError:%0A            print(%22%5CnErro de entrada: N%C3%A3o foi possivel ler mais dados. encerrando programa.%22)%0A            return \n %0A   \n@@ -1050,16 +1050,24 @@\n esposta.\n+strip().\n lower()%0A\n@@ -1107,39 +1107,46 @@\n       print(\n-f%22size: (%7Bcamis\n+%22Tamanho atual:%22, roup\n a.tamanho%7D)%22\n@@ -1134,35 +1134,32 @@\n %22, roupa.tamanho\n-%7D)%22\n )%0A            co\n@@ -1165,32 +1165,34 @@\n ontinue%0A        \n+el\n if cmd == %22end%22:\n@@ -1208,269 +1208,56 @@\n     \n-break%0A        if cmd.startswith(%22size %22):%0A            valor = resposta%5Blen(%22size %22):%5D%0A            valor = valor.strip()%0A            camisa.tamanho = valor%0A            if camisa.tamanho == valor.strip().upper():%0A                print(f%22size: (%7Bcamisa.tamanho%7D)%22)\n+print(%22Encerrando programa.%22)%0A            return\n %0A   \n@@ -1265,21 +1265,14 @@\n     \n-    \n else:\n- %0A  \n+%0A\n     \n@@ -1284,310 +1284,100 @@\n     \n- print(%22fail: valor invalido%22)%0A            continue%0A%0A        camisa.tamanho = resposta%0A        if camisa.tamanho == entrada.strip().upper():%0A            print(f%22size: (%7Bcamisa.tamanho%7D)%22)%0A        else:%0A            print(%22fail: valor invalido%22)%0A    if camisa.tamanho != %22%22:%0A        print(f%22size: (%7Bcamis\n+roupa.tamanho = resposta%0A        %0A    print(%22Parab%C3%A9ns, voc%C3%AA comprou uma roupa tamanho%22, roup\n a.ta\n@@ -1385,11 +1385,8 @@\n anho\n-%7D)%22\n )%0A  \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-26_18-27-03",
+            "content": "@@ -812,17 +812,17 @@\n size: (%7B\n-C\n+c\n amisa.ta\n@@ -1505,16 +1505,22 @@\n )%22)%0A    \n+%0A%0A    \n %0Aif __na\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-26_18-27-49",
+            "content": "@@ -1025,17 +1025,14 @@\n     \n-C\n+c\n amisa\n-isa\n .tam\n@@ -1051,33 +1051,33 @@\n %0A            if \n-C\n+c\n amisa.tamanho ==\n@@ -1124,33 +1124,33 @@\n print(f%22size: (%7B\n-C\n+c\n amisa.tamanho%7D)%22\n@@ -1246,21 +1246,17 @@\n         \n-Camis\n+c\n amisa.ta\n@@ -1279,25 +1279,25 @@\n %0A        if \n-C\n+c\n amisa.tamanh\n@@ -1346,33 +1346,33 @@\n print(f%22size: (%7B\n-C\n+c\n amisa.tamanho%7D)%22\n@@ -1436,17 +1436,17 @@\n %0A    if \n-C\n+c\n amisa.ta\n@@ -1474,33 +1474,33 @@\n print(f%22size: (%7B\n-C\n+c\n amisa.tamanho%7D)%22\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-26_18-28-41",
+            "content": "@@ -1023,24 +1023,27 @@\n       Camisa\n+isa\n .tamanho = v\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-26_18-28-53",
+            "content": "@@ -1,18 +1,19 @@\n class \n-roup\n+Camis\n a:%0A    %0A\n@@ -468,20 +468,21 @@\n zado in \n-roup\n+Camis\n a.TAMANH\n@@ -597,20 +597,21 @@\n roupa = \n-roup\n+Camis\n a()%0A    \n@@ -804,36 +804,37 @@\n print(f%22size: (%7B\n-roup\n+Camis\n a.tamanho%7D)%22)%0A  \n@@ -1013,36 +1013,37 @@\n p()%0A            \n-roup\n+Camis\n a.tamanho = valo\n@@ -1051,36 +1051,37 @@\n %0A            if \n-roup\n+Camis\n a.tamanho == val\n@@ -1124,36 +1124,37 @@\n print(f%22size: (%7B\n-roup\n+Camis\n a.tamanho%7D)%22)%0A  \n@@ -1246,20 +1246,25 @@\n         \n-roup\n+Camisamis\n a.tamanh\n@@ -1283,28 +1283,29 @@\n %0A        if \n-roup\n+Camis\n a.tamanho ==\n@@ -1350,36 +1350,37 @@\n print(f%22size: (%7B\n-roup\n+Camis\n a.tamanho%7D)%22)%0A  \n@@ -1440,20 +1440,21 @@\n %0A    if \n-roup\n+Camis\n a.tamanh\n@@ -1486,20 +1486,21 @@\n size: (%7B\n-roup\n+Camis\n a.tamanh\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-26_18-33-22",
+            "content": "@@ -1,19 +1,18 @@\n class \n-Camis\n+roup\n a:%0A    %0A\n@@ -467,21 +467,20 @@\n zado in \n-Camis\n+roup\n a.TAMANH\n@@ -599,13 +599,12 @@\n a = \n-Camis\n+roup\n a()%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-26_18-34-50",
+            "content": "@@ -802,16 +802,26 @@\n   print(\n+f%22size: (%7B\n roupa.ta\n@@ -825,16 +825,19 @@\n .tamanho\n+%7D)%22\n )%0A      \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-26_18-36-16",
+            "content": "@@ -1097,32 +1097,41 @@\n            print\n+(f%22size: \n (%7Broupa.tamanho%7D\n@@ -1127,24 +1127,26 @@\n pa.tamanho%7D)\n+%22)\n %0A           \n@@ -1450,16 +1450,25 @@\n    print\n+(f%22size: \n (%7Broupa.\n@@ -1476,16 +1476,18 @@\n amanho%7D)\n+%22)\n %0A    %0Aif\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-26_18-39-19",
+            "content": "@@ -1271,23 +1271,22 @@\n anho == \n-respost\n+entrad\n a.strip(\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-26_18-41-03",
+            "content": "@@ -798,34 +798,24 @@\n       print(\n-f%22size: (%7B\n roupa.tamanh\n@@ -807,35 +807,32 @@\n nt(roupa.tamanho\n-%7D)%22\n )%0A            co\n@@ -830,33 +830,32 @@\n        continue%0A\n-%0A\n         if cmd =\n@@ -881,17 +881,16 @@\n   break%0A\n-%0A\n         \n@@ -995,17 +995,16 @@\n strip()%0A\n-%0A\n         \n@@ -1101,19 +1101,37 @@\n        p\n-ass\n+rint(%7Broupa.tamanho%7D)\n %0A       \n@@ -1189,52 +1189,8 @@\n lido\n-, tente %7B', '.join(Camisa.TAMANHOS_VALIDOS)%7D\n %22)%0A \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-26_18-46-14",
+            "content": "@@ -1015,51 +1015,8 @@\n ()%0A%0A\n-            tamanho_antigo = roupa.tamanho%0A\n     \n@@ -1080,27 +1080,8 @@\n o ==\n- tamanho_antigo and\n  val\n@@ -1102,40 +1102,49 @@\n er()\n- not in Camisa.TAMANHOS_VALIDOS:\n+:%0A                pass%0A            else: \n %0A   \n@@ -1167,23 +1167,23 @@\n nt(%22\n-F\n+f\n ail: \n-V\n+v\n alor inv\n %C3%A1lid\n@@ -1174,25 +1174,25 @@\n l: valor inv\n-%C3%A1\n+a\n lido, tente \n@@ -1195,92 +1195,201 @@\n nte \n-PP, P, M, G, GG ou XG%22)%0A            else: %0A                pass%0A            continue\n+%7B', '.join(Camisa.TAMANHOS_VALIDOS)%7D%22)%0A            continue%0A%0A        roupa.tamanho = resposta%0A        if roupa.tamanho == resposta.strip().upper():%0A            print(f%22size: (%7Broupa.tamanho%7D)%22)\n %0A   \n@@ -1422,33 +1422,90 @@\n nt(%22\n-F\n+f\n ail: \n-comando\n+valor\n  inv\n-%C3%A1\n+a\n lido%22)%0A\n+    if roupa.tamanho != %22%22:%0A        print(%7Broupa.tamanho%7D)%0A\n     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-26_18-51-01",
+            "content": "@@ -174,16 +174,55 @@\n -%3E str:%0A\n+        %22%22%22Getter para o tamanho.%22%22%22%0A  \n       re\n@@ -301,16 +301,52 @@\n : str):%0A\n+        %22%22%22Setter para o tamanho%22%22%22%0A\n         \n@@ -1088,17 +1088,16 @@\n = valor%0A\n-%0A\n         \n@@ -1329,25 +1329,16 @@\n ontinue%0A\n-        %0A\n         \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-26_18-56-18",
+            "content": "@@ -603,42 +603,8 @@\n p()%0A\n-            print(f%22$%7Bresposta%7D%22)%0A\n     \n@@ -1247,32 +1247,40 @@\n        continue%0A\n+        \n %0A        else:%0A \n@@ -1354,17 +1354,16 @@\n ain__%22:%0A\n- \n     main\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-26_18-58-40",
+            "content": "@@ -1176,17 +1176,17 @@\n  print(%22\n-f\n+F\n ail: Val\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-26_18-59-35",
+            "content": "class Camisa:\n    \n    TAMANHOS_VALIDOS  = (\"PP\" , \"P\", \"M\", \"G\", \"GG\" , \"XG\")\n\n    def __init__(self):\n        self.__tamanho = \"\"\n    \n    @property\n    def tamanho(self) -> str:\n      return self.__tamanho\n    \n    @tamanho.setter\n    def tamanho(self, valor: str):\n        if valor is None:\n            valor = \"\"\n        valor_normalizado = valor.strip().upper()\n        if valor_normalizado in Camisa.TAMANHOS_VALIDOS:\n            self.__tamanho = valor_normalizado\n        else:\n            pass\n\n\ndef main():\n    roupa = Camisa()\n    while True:\n        try:\n            resposta = input().strip()\n            print(f\"${resposta}\")\n        except EOFError:\n            break\n        \n        cmd = resposta.lower()\n\n        if cmd == \"show\":\n            print(f\"size: ({roupa.tamanho})\")\n            continue\n\n        if cmd == \"end\":\n            break\n\n        if cmd.startswith(\"size \"):\n            valor = resposta[len(\"size \"):]\n            valor = valor.strip()\n\n            tamanho_antigo = roupa.tamanho\n            roupa.tamanho = valor\n\n            if roupa.tamanho == tamanho_antigo and valor.strip().upper() not in Camisa.TAMANHOS_VALIDOS:\n                print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n            else: \n                pass\n            continue\n\n        else:\n            print(\"Fail: comando inv\u00e1lido\")\n    \nif __name__ == \"__main__\":\n     main()",
+            "lines": "58"
+        }
+    ]
+}
