@@ -8,3 +8,28 @@
 2025-10-28 00:13:02, EXEC, v:1, k:poo@relogio, mode:FULL, rate:23, size:100
 2025-10-28 00:21:36, EXEC, v:1, k:poo@relogio, mode:FULL, rate:23, size:101
 2025-10-28 00:21:47, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-28 12:46:16, MOVE, v:1, k:poo@motouber, mode:DOWN
+2025-10-28 12:46:18, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-28 13:32:08, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:119
+2025-10-28 13:32:16, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:119
+2025-10-28 13:32:27, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:119
+2025-10-28 13:36:01, EXEC, v:1, k:poo@motouber, mode:FULL, rate:25, size:121
+2025-10-28 13:37:59, EXEC, v:1, k:poo@motouber, mode:FULL, rate:87, size:121
+2025-10-28 13:38:14, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100, size:121
+2025-10-28 13:38:22, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-28 13:38:34, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-28 13:38:36, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:0
+2025-10-28 14:17:22, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:141
+2025-10-28 14:17:40, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:141
+2025-10-28 14:18:49, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100, size:141
+2025-10-28 14:18:57, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-28 14:19:05, MOVE, v:1, k:poo@charger, mode:DOWN
+2025-10-28 14:19:06, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-28 14:54:02, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:168
+2025-10-28 14:54:30, EXEC, v:1, k:poo@charger, mode:FULL, rate:10, size:168
+2025-10-28 14:55:30, EXEC, v:1, k:poo@charger, mode:FULL, rate:10, size:169
+2025-10-28 14:56:42, EXEC, v:1, k:poo@charger, mode:FULL, rate:15, size:169
+2025-10-28 14:57:57, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:172
+2025-10-28 14:58:05, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:172
+2025-10-28 14:58:24, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:172
+2025-10-28 14:58:33, EXEC, v:1, k:poo@charger, mode:FULL, rate:15, size:172

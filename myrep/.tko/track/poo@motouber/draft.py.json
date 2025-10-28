@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-28_13-32-08",
+            "content": "@@ -61,33 +61,32 @@\n dinheiro: float)\n-:\n %0A        self.__\n",
+            "lines": "119"
+        },
+        {
+            "label": "2025-10-28_13-32-16",
+            "content": "@@ -583,33 +583,33 @@\n 0.0%0A            \n-r\n+s\n eturn valor_pago\n",
+            "lines": "119"
+        },
+        {
+            "label": "2025-10-28_13-32-27",
+            "content": "@@ -337,18 +337,18 @@\n inheiro \n-+\n =\n++\n  valor%0A%0A\n@@ -1801,17 +1801,16 @@\n  does no\n-t\n  have en\n@@ -2329,19 +2329,21 @@\n nger: %7Bp\n-a\n+e\n ss\n+oa\n _str%7D%22%0A%0A\n@@ -2894,82 +2894,8 @@\n %5D))%0A\n-            elif cmd == %22setPass%22:%0A                moto.setPass(parts%5B1%5D)%0A\n     \n@@ -3148,17 +3148,16 @@\n : unknow\n-n\n  command\n@@ -3233,16 +3233,16 @@\n n as e:%0A\n+\n         \n@@ -3264,17 +3264,16 @@\n error oc\n-c\n urred: %7B\n",
+            "lines": "119"
+        },
+        {
+            "label": "2025-10-28_13-36-01",
+            "content": "@@ -2961,33 +2961,16 @@\n parts%5B1%5D\n-, float(parts%5B2%5D)\n )%0A      \n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-10-28_13-37-59",
+            "content": "@@ -1784,17 +1784,17 @@\n (%22fail: \n-P\n+p\n assenger\n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-10-28_13-38-14",
+            "content": "import sys\n\nclass Pessoa:\n    def __init__(self, nome: str, dinheiro: float):\n        self.__nome = nome\n        self.__dinheiro = float(dinheiro)\n\n    def get_nome(self) -> str:\n        return self.__nome\n    \n    def get_dinheiro(self) -> float:\n        return self.__dinheiro\n    \n    def receber(self, valor:float):\n        self.__dinheiro += valor\n\n    def pagar(self, valor: float) -> float:\n        if self.__dinheiro >= valor:\n            self.__dinheiro -= valor\n            return valor\n        else:\n            valor_pago = self.__dinheiro\n            self.__dinheiro = 0.0\n            return valor_pago\n\n\n    def __str__(self) -> str:\n        return f\"{self.__nome}:{self.__dinheiro:.0f}\"\n    \nclass Moto:\n    def __init__(self):\n        self.__custo = 0.0\n        self.__motorista = None\n        self.__passageiro = None\n\n    def setDriver(self, nome: str, dinheiro: float):\n        self.__motorista = Pessoa(nome, dinheiro)\n\n    def setPass(self,nome: str, dinheiro:float):\n        if self.__motorista is None:\n            print(\"fail: no driver\")\n            return\n        if self.__passageiro is not None:\n            print(\"fail: passenger already on the bike\")\n            return\n        self.__passageiro = Pessoa(nome, dinheiro)\n\n    def drive(self, km: float):\n        if self.__motorista is None:\n            print(\"fail: no driver\")\n            return\n        if self.__passageiro is None:\n            print(\"fail: no passenger to drive\")\n            return\n        self.__custo += float(km) * 1\n\n\n    def leavePass(self):\n        if self.__passageiro is None:\n            print(\"fail: no passenger to leave\")\n            return\n        \n        custo_total = self.__custo\n        \n        if self.__passageiro.get_dinheiro() < custo_total:\n            print(\"fail: Passenger does not have enough money\")\n\n        self.__passageiro.pagar(custo_total)\n\n        self.__motorista.receber(custo_total)\n\n        print(f\"{self.__passageiro.get_nome()}:{self.__passageiro.get_dinheiro():.0f} left\")\n        self.__passageiro = None\n        self.__custo = 0.0\n\n    def __str__(self) -> str:\n        driver_str = str(self.__motorista) if self.__motorista else \"None\"\n        pass_str = str(self.__passageiro) if self.__passageiro else \"None\"\n\n        return f\"Cost: {self.__custo:.0f}, Driver: {driver_str}, Passenger: {pass_str}\"\n\n\ndef main():\n\n    moto = Moto()\n\n    sys.stdin.reconfigure(encoding='utf-8')\n    sys.stdout.reconfigure(encoding='utf-8')\n\n    while True:\n        try:\n            line = input()\n            if line.strip() == \"\":\n                continue\n            print(f\"${line}\")\n            parts = line.split()\n            cmd = parts[0]\n            \n            if cmd == \"end\":\n                break\n            elif cmd == \"show\":\n                print(moto)\n            elif cmd == \"setDriver\":\n                moto.setDriver(parts[1], float(parts[2]))\n            elif cmd == \"setPass\":\n                moto.setPass(parts[1], float(parts[2]))\n            elif cmd ==\"drive\":\n                moto.drive(float(parts[1]))\n            elif cmd == \"leavePass\":\n                moto.leavePass()\n            elif cmd.startswith(\"#\"):\n                pass\n            else:\n                print(\"fail: unknown command\")\n        except EOFError:\n            break\n        except Exception as e:\n            print(f\"An error occurred: {e}\")\n            break\nif __name__ == \"__main__\":\n    main()",
+            "lines": "121"
+        }
+    ]
+}
