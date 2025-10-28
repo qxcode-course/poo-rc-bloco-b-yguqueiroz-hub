@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-27_23-07-28",
+            "content": "@@ -1125,8 +1125,14 @@\n _main__%22\n+:%0A    \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-27_23-07-40",
+            "content": "@@ -1095,17 +1095,24 @@\n tring()%0A\n-%0A\n+    %0Aif \n __name__\n@@ -1125,10 +1125,8 @@\n _main__%22\n-:%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-27_23-07-54",
+            "content": "@@ -1094,8 +1094,34 @@\n String()\n+%0A%0A__name__ == %22__main__%22:%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-27_23-08-02",
+            "content": "@@ -1098,518 +1098,4 @@\n ng()\n-%0A    %0Aif __name__ == %22__main__%22:%0A    try: %0A        line = input()%0A        h, m, s = map(int, line.split())%0A%0A    except (EOFError, ValueError):%0A        h, m, s = 0, 0, 0%0A%0A    my_watch = Watch(h, m, s)%0A%0A    while True:%0A        try:%0A            comand = input()%0A%0A            if command = %22$show%22:%0A                print(my_watch.toString())%0A            elif command == %22$next%22:%0A                my_watch.nextSecond()%0A            elif command == %22$end%22:%0A                break%0A%0A        except EOFError:%0A            break%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-27_23-17-15",
+            "content": "@@ -1378,17 +1378,16 @@\n ommand =\n-=\n  %22$show%22\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-27_23-17-46",
+            "content": "@@ -1,16 +1,4 @@\n-import sys%0A%0A\n clas\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-27_23-19-31",
+            "content": "@@ -235,20 +235,16 @@\n econd)%0A%0A\n-    \n def get_\n@@ -251,36 +251,32 @@\n hour(self):%0A    \n- \n-   \n return self._hou\n@@ -274,28 +274,24 @@\n self._hour%0A%0A\n-    \n def get_minu\n@@ -296,36 +296,32 @@\n nute(self):%0A    \n- \n-   \n return self._min\n@@ -321,28 +321,24 @@\n lf._minute%0A%0A\n-    \n def get_seco\n@@ -347,28 +347,24 @@\n (self):%0A    \n- \n-   \n return self.\n@@ -368,28 +368,24 @@\n lf._second%0A%0A\n-    \n def set_hour\n@@ -394,28 +394,24 @@\n elf, hour):%0A\n-    \n     if 0 %3C= \n@@ -422,36 +422,32 @@\n  %3C= 23:%0A        \n- \n-   \n self._hour = hou\n@@ -449,20 +449,16 @@\n = hour%0A%0A\n-    \n def set_\n@@ -479,28 +479,24 @@\n inute):%0A    \n-  \n-  \n if 0 %3C= minu\n@@ -497,36 +497,32 @@\n = minute %3C= 59:%0A\n-    \n         self._mi\n@@ -536,20 +536,16 @@\n minute%0A%0A\n-    \n def set_\n@@ -562,28 +562,24 @@\n f, second):%0A\n-    \n     if 0 %3C= \n@@ -592,36 +592,32 @@\n  %3C= 59:%0A        \n-  \n-  \n self._second = s\n@@ -623,20 +623,16 @@\n second%0A%0A\n-    \n def next\n@@ -645,28 +645,24 @@\n (self):%0A    \n-  \n-  \n if self._sec\n@@ -672,36 +672,32 @@\n  == 59:%0A        \n-    \n self._second = 0\n@@ -697,36 +697,32 @@\n ond = 0%0A        \n-   \n- \n if self._minute \n@@ -731,36 +731,32 @@\n 59:%0A            \n-    \n self._hour = 0%0A \n@@ -762,28 +762,24 @@\n             \n-   \n- \n if self._hou\n@@ -795,36 +795,32 @@\n                 \n-    \n self._hour = 0%0A \n@@ -826,38 +826,30 @@\n             \n-   \n- \n else:%0A\n-    \n             \n@@ -872,38 +872,30 @@\n = 1%0A        \n-   \n- \n else:%0A\n-    \n             \n@@ -908,28 +908,24 @@\n minute += 1%0A\n-    \n     else:%0A  \n@@ -926,28 +926,24 @@\n se:%0A        \n-    \n self._second\n@@ -950,20 +950,16 @@\n  += 1%0A%0A%0A\n-    \n     def \n@@ -978,28 +978,24 @@\n f):%0A        \n-    \n return f%22%7Bse\n@@ -1055,18 +1055,10 @@\n     \n-    %0A%0A    \n+%0A%0A\n     \n@@ -1072,28 +1072,24 @@\n tr__(self):%0A\n-    \n         retu\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-27_23-22-27",
+            "content": "@@ -1479,25 +1479,24 @@\n          com\n-m\n and = input(\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-27_23-23-45",
+            "content": "@@ -1503,106 +1503,8 @@\n ()%0A%0A\n-            parts = line.split()%0A            %0A            if not parts:%0A                continue%0A%0A\n     \n@@ -1534,16 +1534,16 @@\n $show%22:%0A\n+\n         \n@@ -1573,25 +1573,24 @@\n toString())%0A\n-%0A\n             \n@@ -1656,264 +1656,8 @@\n d()%0A\n-%0A            elif command == %22$set%22:%0A                h = int(parts%5B1%5D)%0A                m = int(parts%5B2%5D)%0A                s = int(parts%5B3%5D)%0A%0A                my_watch.set_hour(h)%0A                my_watch.set_minute(m)%0A                my_watch.set_second(s)%0A%0A\n     \n@@ -1736,16 +1736,16 @@\n FError:%0A\n+\n         \n@@ -1758,62 +1758,4 @@\n eak%0A\n-        except (IndexError, ValueError):%0A            pass%0A\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-27_23-32-24",
+            "content": "@@ -1501,16 +1501,9 @@\n ut()\n-.strip()\n+%0A\n %0A   \n@@ -1515,23 +1515,28 @@\n     \n-if not command:\n+parts = line.split()\n %0A   \n@@ -1548,98 +1548,60 @@\n     \n+%0A\n     \n-continue%0A%0A            parts = command.split()%0A%0A            print(command)%0A            \n+        if not parts:%0A                continue%0A\n %0A   \n@@ -1612,24 +1612,23 @@\n      if \n-parts%5B0%5D\n+command\n  == %22$sh\n@@ -1765,32 +1765,31 @@\n        elif \n-parts%5B0%5D\n+command\n  == %22$set%22 a\n@@ -1790,28 +1790,8 @@\n set%22\n- and len(parts) == 4\n :%0A  \n@@ -2028,16 +2028,15 @@\n lif \n-parts%5B0%5D\n+command\n  == \n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-10-27_23-37-43",
+            "content": "@@ -122,33 +122,32 @@\n  0%0A        self.\n-_\n second = 0%0A%0A    \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-27_23-38-42",
+            "content": "@@ -1565,36 +1565,8 @@\n ue%0A%0A\n-            print(command)%0A%0A\n     \n@@ -1593,25 +1593,25 @@\n and.split()%0A\n- \n+%0A\n            c\n@@ -1613,23 +1613,23 @@\n     \n-cmd = parts%5B0%5D%0A\n+ print(command)\n %0A   \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-27_23-40-22",
+            "content": "@@ -1588,16 +1588,17 @@\n ommand)%0A\n+%0A\n         \n@@ -1628,16 +1628,53 @@\n it()%0A   \n+         cmd = parts%5B0%5D%0A%0A            \n %0A       \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-27_23-41-41",
+            "content": "@@ -1583,21 +1583,15 @@\n int(\n-f%22$%7B\n command\n-%7D%22\n )%0A  \n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-10-27_23-45-52",
+            "content": "@@ -818,38 +818,36 @@\n           self._\n-minute\n+hour\n  = 0%0A           \n@@ -1063,16 +1063,20 @@\n  += 1%0A%0A%0A\n+    \n     def \n@@ -1178,16 +1178,20 @@\n       %0A%0A\n+    \n     def \n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-10-27_23-50-33",
+            "content": "@@ -141,17 +141,16 @@\n cond = 0\n- \n %0A%0A      \n@@ -800,17 +800,16 @@\n inute ==\n- \n 59:%0A    \n@@ -1064,16 +1064,17 @@\n d += 1%0A%0A\n+%0A\n     def \n@@ -1093,24 +1093,28 @@\n f):%0A        \n+    \n return f%22%7Bse\n@@ -1171,24 +1171,25 @@\n %7D%22%0A        %0A\n+%0A\n     def __st\n@@ -1199,32 +1199,36 @@\n (self):%0A        \n+    \n return self.toSt\n@@ -1274,108 +1274,196 @@\n     \n-%0A    my_watch = Watch(0, 0, 0)%0A%0A    while True:%0A        try:%0A            line = input(\n+try: %0A        line = input()%0A        h, m, s = map(int, line.split())%0A%0A    except (EOFError, ValueError):%0A        h, m, s = 0, 0, 0%0A%0A    my_watch = Watch(h, m, s\n )%0A\n+%0A\n     \n+while True:%0A\n         \n %0A   \n@@ -1450,32 +1450,36 @@\n e True:%0A        \n+try:\n %0A            par\n@@ -1479,26 +1479,31 @@\n     \n-parts\n+command\n  = \n-l\n in\n-e.split\n+put().strip\n ()%0A \n@@ -1517,33 +1517,22 @@\n     \n-%0A            if not parts\n+if not command\n :%0A  \n@@ -1557,83 +1557,82 @@\n inue\n- %0A                %0A            command = parts%5B0%5D%0A%0A            print(line)%0A\n+%0A%0A            print(f%22$%7Bcommand%7D%22)%0A            parts = command.split()%0A   \n %0A   \n@@ -1643,28 +1643,30 @@\n      if \n-command\n+parts%5B0%5D\n  == %22\n+$\n show%22:%0A \n@@ -1707,28 +1707,16 @@\n ring())%0A\n-            \n %0A       \n@@ -1737,16 +1737,17 @@\n and == %22\n+$\n next%22:%0A \n@@ -1783,28 +1783,16 @@\n econd()%0A\n-            \n %0A       \n@@ -1805,24 +1805,46 @@\n lif \n-command\n+parts%5B0%5D\n  == %22\n+$\n set%22\n+ and len(parts) == 4\n :%0A  \n@@ -1943,32 +1943,16 @@\n rts%5B3%5D)%0A\n-                \n %0A       \n@@ -2077,28 +2077,30 @@\n    elif \n-command\n+parts%5B0%5D\n  == %22\n+$\n end%22:%0A  \n@@ -2118,30 +2118,17 @@\n    break\n- %0A            \n+%0A\n %0A       \n@@ -2135,25 +2135,24 @@\n  except \n-(\n EOFError\n ):%0A     \n@@ -2139,25 +2139,24 @@\n ept EOFError\n-)\n :%0A          \n@@ -2220,8 +2220,9 @@\n     pass\n+%0A\n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-10-27_23-51-32",
+            "content": "@@ -1353,16 +1353,8 @@\n ut()\n-.strip()\n %0A   \n@@ -1366,20 +1366,41 @@\n     \n-if not line:\n+%0A            parts = line.split()\n %0A   \n@@ -1412,93 +1412,77 @@\n     \n+%0A\n     \n-continue%0A        %0A            print(f%22$%7Bline%7D%22)%0A%0A            parts = line.split()\n+        if not parts:%0A                continue %0A                \n %0A   \n@@ -1510,16 +1510,41 @@\n rts%5B0%5D%0A%0A\n+            print(line)%0A%0A\n         \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-27_23-59-18",
+            "content": "@@ -1443,17 +1443,16 @@\n f%22$%7Bline\n- \n %7D%22)%0A%0A   \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-27_23-59-51",
+            "content": "@@ -1447,10 +1447,10 @@\n line\n-%7D\n  \n+%7D\n %22)%0A%0A\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-28_00-00-22",
+            "content": "@@ -1444,16 +1444,17 @@\n %22$%7Bline%7D\n+ \n %22)%0A%0A    \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-28_00-00-36",
+            "content": "@@ -1729,96 +1729,8 @@\n t%22:%0A\n-                if len(parts) != 4:%0A                    print(%22fail: formato invalido%22)%0A\n     \n@@ -1827,17 +1827,16 @@\n rts%5B3%5D)%0A\n-%0A\n         \n@@ -1847,291 +1847,9 @@\n     \n-if not (0 %3C= h %3C= 23):%0A                    print(%22fail: hora invalida%22)%0A                elif not (o %3C= m %3C= 59):%0A                    print (%22fail: minuto invalido%22)%0A                elif not (0 %3C= s %3C= 59):%0A                    print(%22fail: segundo invalido%22)%0A                else%0A    \n+%0A\n     \n@@ -1881,20 +1881,16 @@\n hour(h)%0A\n-    \n         \n@@ -1920,20 +1920,16 @@\n nute(m)%0A\n-    \n         \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-28_00-12-48",
+            "content": "@@ -2202,33 +2202,32 @@\n             else\n-:\n %0A               \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-28_00-12-56",
+            "content": "@@ -2026,25 +2026,25 @@\n   elif not (\n-0\n+o\n  %3C= m %3C= 59)\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-28_00-13-02",
+            "content": "@@ -1817,34 +1817,8 @@\n o%22)%0A\n-                else:%0A    \n     \n@@ -1863,20 +1863,16 @@\n         \n-  \n-  \n m = int(\n@@ -1881,20 +1881,16 @@\n rts%5B2%5D)%0A\n-    \n         \n@@ -1928,28 +1928,24 @@\n             \n-   \n- \n if not (0 %3C=\n@@ -1955,20 +1955,16 @@\n %3C= 23):%0A\n-    \n         \n@@ -2012,36 +2012,32 @@\n                 \n-    \n elif not (0 %3C= m\n@@ -2061,28 +2061,24 @@\n             \n- \n-   \n print (%22fail\n@@ -2105,36 +2105,32 @@\n                 \n-    \n elif not (0 %3C= s\n@@ -2150,36 +2150,32 @@\n                 \n-  \n-  \n print(%22fail: seg\n@@ -2198,36 +2198,32 @@\n                 \n-    \n else:%0A          \n@@ -2224,36 +2224,32 @@\n                 \n-   \n- \n my_watch.set_hou\n@@ -2253,20 +2253,16 @@\n hour(h)%0A\n-    \n         \n@@ -2296,20 +2296,16 @@\n nute(m)%0A\n-    \n         \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-28_00-21-36",
+            "content": "import sys\n\nclass Watch:\n    \n    def __init__(self, hour, minute, second):\n        self._hour = 0\n        self._minute = 0\n        self._second = 0 \n\n        self.set_hour(hour)\n        self.set_minute(minute)\n        self.set_second(second)\n\n    def get_hour(self):\n        return self._hour\n\n    def get_minute(self):\n        return self._minute\n\n    def get_second(self):\n        return self._second\n\n    def set_hour(self, hour):\n        if 0 <= hour <= 23:\n            self._hour = hour\n\n    def set_minute(self, minute):\n        if 0 <= minute <= 59:\n            self._minute = minute\n\n    def set_second(self, second):\n        if 0 <= second <= 59:\n            self._second = second\n\n    def nextSecond(self):\n        if self._second == 59:\n            self._second = 0\n            if self._minute == 59:\n                self._minute = 0\n                if self._hour == 23:\n                    self._hour = 0\n                else:\n                    self._hour += 1\n            else:\n                self._minute += 1\n        else:\n            self._second += 1\n\n    def toString(self):\n        return f\"{self._hour:02d}:{self._minute:02d}:{self._second:02d}\"\n        \n    def __str__(self):\n        return self.toString()\n    \nif __name__ == \"__main__\":\n    \n    my_watch = Watch(0, 0, 0)\n\n    while True:\n        try:\n            line = input().strip()\n            if not line:\n                continue\n        \n            print(f\"${line}\")\n\n            parts = line.split()\n            command = parts[0]\n\n            if command == \"show\":\n                print(my_watch.toString())\n            \n            elif command == \"next\":\n                my_watch.nextSecond()\n            \n            elif command == \"set\":\n                if len(parts) != 4:\n                    print(\"fail: formato invalido\")\n                else:\n                    h = int(parts[1])\n                    m = int(parts[2])\n                    s = int(parts[3])\n\n                    if not (0 <= h <= 23):\n                        print(\"fail: hora invalida\")\n                    elif not (0 <= m <= 59):\n                        print (\"fail: minuto invalido\")\n                    elif not (0 <= s <= 59):\n                        print(\"fail: segundo invalido\")\n                    else:\n                        my_watch.set_hour(h)\n                        my_watch.set_minute(m)\n                        my_watch.set_second(s)\n\n            elif command == \"end\":\n                break \n            \n        except (EOFError):\n            break\n        except (IndexError, ValueError):\n            pass",
+            "lines": "101"
+        }
+    ]
+}

@@ -2,13 +2,17 @@ version: '0.2'
 sources:
 - database: local
   link: ''
+  type: local
+  branch: master
   cache_path: ''
   cache_timestamp: ''
   filters: null
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  type: remote
+  branch: master
   cache_path: /workspaces/poo-rc-bloco-b-yguqueiroz-hub/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-26 17:59:16'
+  cache_timestamp: '2025-10-28 00:00:16'
   filters:
   - acesso
   - simples
@@ -18,6 +22,7 @@ expanded:
 - poo@bloco_b-agregação-simples
 tasks:
   poo@roupa: '{rate:100}'
+  poo@relogio: '{rate:23}'
 flags:
   quests: 0
   tracks: 0
@@ -25,4 +30,4 @@ flags:
   graph: 0
   xray: 0
 lang: py
-selected: poo@relogio
+selected: poo@tamagotchi

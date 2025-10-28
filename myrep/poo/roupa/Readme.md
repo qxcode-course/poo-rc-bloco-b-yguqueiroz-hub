@@ -34,7 +34,7 @@ $show
 size: ()
 
 $size PP
-$show
+$showe
 size: (PP)
 
 $end
